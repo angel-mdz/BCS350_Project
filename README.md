@@ -82,3 +82,94 @@ Use one scrolling page in this order: Home, About, Skills, Projects & Research, 
 - [ ] Collect repository or demo URLs for each project where available; confirm whether each can be shared publicly.
 - [ ] Collect available project screenshots or other approved visuals during design planning; record any projects without suitable images.
 - [ ] Verify supplied professional links before publication.
+
+## Design questions
+
+### 1. What overall style will best represent you (minimalist, creative, professional, etc.)?
+
+A minimalist portfolio with a retro gaming influence. The design will use subtle retro gaming details to preserve the minimalist theme. Specific decorative treatments and imagery remain to be decided.
+
+### 2. What color scheme will you use and why?
+
+The working palette uses green-tinted charcoal with emerald accents, reflecting my favorite color and supporting the cozy retro theme. This palette is approved for now and can be revisited after reviewing the full design.
+
+| Role | Color |
+| --- | --- |
+| Background | `#101814` |
+| Panels | `#19251E` |
+| Main text | `#E8F0EA` |
+| Secondary text | `#A9B8AE` |
+| Emerald accent | `#34D399` |
+
+The primary Contact Me button will use an emerald fill with dark text; supporting actions will use quieter emerald outlines or text. Solid-color text contrast has been checked mathematically; rendered focus states, controls, and other combinations still need verification during implementation.
+
+### 3. What fonts will you use for headings and body text?
+
+Slimmer pixel-style lettering is the working choice for headings and occasional small accents, and can be revisited after visual review. Body text will use a simple, readable font so longer descriptions remain easy to read. Approved font pairing: Pixelify Sans Regular (400) for headings and small accents, with Inter Regular (400) for body text.
+
+### 4. How will your design reflect your personality or field?
+
+Subtle retro gaming touches will reflect my interest in gaming, while the minimalist presentation will keep my skills, projects, and research easy to explore. Pixel-style typography will be used selectively rather than throughout the page.
+
+### 5. What layout will your homepage follow?
+
+The Home section will use a split layout, with my name, introduction, and action buttons on the left and a visual on the right. The visual will be a small retro scene depicting a cozy PC setup; an original illustration will be created for review and may be replaced if it does not suit the design. On mobile, the introduction and action buttons will appear first, followed by the PC scene.
+
+### 6. How will you organize project sections visually?
+
+Projects will appear as wider, stacked entries with room for project visuals, descriptions, and my individual contributions. Screenshots are available for Soft Steps and the 2D Mystery Game but have not yet been supplied or reviewed. The SMS Spam Classifier produces text output and has no GUI; a short example of its actual output will be shown in a terminal-style panel alongside its description. The output still needs to be supplied and reviewed. On desktop, successive entries will alternate the visual and description between the left and right sides. On mobile, each project will show its title and description first, followed by its screenshot or terminal panel.
+
+### 7. Will the site be mobile-friendly? How will you ensure responsiveness?
+
+Yes. The desktop Home section will use text on the left and a visual on the right, while project entries will alternate visual/text sides. On mobile, Home will stack the introduction and buttons before the PC scene. Each project will stack its title and description before its screenshot or terminal panel. Breakpoints, flexible sizing, and checks for readability and overflow remain to be specified and verified during implementation.
+
+### 8. What visual hierarchy will guide visitors?
+
+My name will be the largest text in Home, followed by a short career introduction. Contact Me will be the primary button, with View Projects and resume access as supporting actions. The emphasis should remain harmonious with the dark and emerald theme, avoiding jarring contrast between elements. The working palette uses green-tinted charcoal and emerald; rendered states and control contrast still need verification during implementation.
+
+### 9. How will consistency be maintained across pages?
+
+The single-page portfolio will use shared pixel-style headings, spacing rules, button styles, and subtle pixel borders across its sections. Alternating desktop project layouts will provide variety within these consistent visual rules.
+
+### 10. How will accessibility be considered (contrast, font size, readability)?
+
+Body text will use a readable font, with pixel typography reserved for headings and small accents. Keyboard focus will be visible, informative images will have descriptive alternatives, and decorative artwork will be treated appropriately for assistive technology. Motion will be minimal and respect reduced-motion preferences. Exact font sizes remain to be selected. Main text, secondary text, and emerald text have been checked against both planned dark surfaces; implementation will also require keyboard and responsive readability checks.
+
+### 11. Will you use icons, images, or illustrations? Why?
+
+A small retro scene of a cozy PC setup in the Home section will support the gaming influence. Available screenshots of Soft Steps and the 2D Mystery Game can help visitors understand those projects. The SMS Spam Classifier will use a terminal-style panel showing a short example of actual text output alongside its description. Project screenshots and classifier output still need to be supplied and reviewed. Small pixel-style icons will accompany section headings. The original cozy PC illustration and four pixel-style section icons have been created and approved. Any external replacements will require suitable licensing and credit, and resources used in creating the artwork will be documented.
+
+### 12. What portfolio websites inspired your design?
+
+[Gazi Jarin's portfolio](https://www.gazijarin.com/) is a user-selected inspiration reference. Its dark presentation, generous spacing, prominent introduction, restrained bright accents, and simple section navigation offer useful reference points. The clean layout and colors are the main inspiration; the game elements also appeal to me as a secondary influence. My design will keep gaming details subtle to preserve minimalism. My portfolio will retain its approved original direction: green-tinted charcoal, emerald accents, selective slim pixel lettering, a cozy PC illustration, left-side Home text, and alternating wide project entries. A separate Game Mode has not been selected; specific interactive features will be decided in Phase 3. The implementation, artwork, and content will be original.
+
+## Visual design
+
+### Approved Phase 2 design package
+
+The established design direction is minimalist retro with the approved green-tinted charcoal/emerald palette. The user approved the desktop/mobile wireframes and Pixelify Sans + Inter font pairing. The saved illustration and original icons are also approved. Phase 2 design planning is complete; implementation and rendered accessibility verification remain for later phases.
+
+- Approved typography: **Pixelify Sans Regular (400)** for headings and small accents, **Inter Regular (400)** for body text; 500 for occasional emphasis. [Font sample](docs/design/font-sample.html). The font pairing is approved. Website font delivery will be decided in the technical plan.
+- [Desktop wireframe](docs/wireframes/desktop.png): split Home, wide alternating projects, About resume access, and Contact section.
+- [Mobile wireframe](docs/wireframes/mobile.png): Home text/buttons before artwork; project text before visuals. Navigation is shown as wrapping links; any menu behavior is reserved for Phase 3.
+- [Original cozy PC concept](docs/design/cozy-pc-concept.png): the approved AI-generated illustration is saved and placed in both wireframes. It follows the same cozy PC direction as the earlier concept. It is illustrative rather than a depiction of the user's actual equipment.
+- Approved section icons: original small pixel motifs (person, code brackets, folder, envelope), paired with visible headings. [Icon review sheet](docs/design/pixel-icons.png). Individual currentColor SVGs are saved as docs/design/icon-about.svg, icon-skills.svg, icon-projects.svg, and icon-contact.svg. The low-fidelity wireframes retain square placement markers; the actual illustration and SVG icon designs are approved.
+
+Wireframes show content roles where actual assets are missing; no project results, screenshots, or classifier output have been fabricated. These are planning drawings, not implemented pages. Layout content is indicative; approved content answers remain authoritative.
+
+### Proposed reusable rules
+
+Use a centered content area up to approximately 1120 px with generous section spacing. Body text starts at 18 px with approximately 1.6 line height; narrow screens may use 16 px. Use fluid pixel headings, short lines, and a spacing scale of 8, 16, 24, 32, 48, and 64 px. At widths where two columns no longer fit comfortably (initial planning point: 768 px), stack the Home and project layouts. Validate intermediate widths rather than treating this breakpoint as verified.
+
+Use semantic landmarks, ordered headings, and a skip link. Keep logical reading order consistent even when desktop visual sides alternate. Proposed focus treatment: a 2 px emerald outline with offset against dark surfaces; emerald-filled controls need a contrasting dark separation. Maintain descriptive text labels, decorative icons hidden from assistive technology, and no essential information conveyed only by color. Avoid autoplay and respect reduced-motion preferences.
+
+Calculated contrast ratios against background / panel respectively: main text 15.55 / 13.65, secondary text 8.73 / 7.67, emerald 9.39 / 8.25. Dark text on the emerald button is 9.39. These are solid-color calculations, not rendered accessibility verification.
+
+### Resources and asset responsibilities
+
+- Inspiration: [Gazi Jarin](https://www.gazijarin.com/), especially clean spacing and restrained dark/bright colors. No source code or artwork copied.
+- [Pixelify Sans](https://fonts.google.com/specimen/Pixelify+Sans), [source and SIL OFL 1.1 license](https://github.com/eifetx/Pixelify-Sans).
+- [Inter](https://fonts.google.com/specimen/Inter), [source and SIL OFL 1.1 license](https://github.com/rsms/inter).
+- If fonts are distributed with the website, retain their license/copyright notices. No font files have been added yet.
+- Approved original illustration generated with OpenAI image generation. Approved original section icons were drawn for this project, without an external icon dependency.
+- Soft Steps/game screenshots, actual classifier output, resume PDF, and public-sharing confirmation remain user asset follow-ups before implementation/publication.
