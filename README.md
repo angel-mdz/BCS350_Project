@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Personal portfolio for Angel Mendez Reyes. This Web Design Document is being developed during planning; website implementation has not started.
+Personal portfolio for Angel Mendez Reyes. Phases 1-3 of this Web Design Document are complete and approved: content, visual design, interactivity, technical approach, verification plan, and milestones. Website implementation has not started. Missing personal assets and public-sharing confirmations remain explicit follow-up tasks.
 
 ## Content questions
 
@@ -87,7 +87,7 @@ Use one scrolling page in this order: Home, About, Skills, Projects & Research, 
 
 ### 1. What overall style will best represent you (minimalist, creative, professional, etc.)?
 
-A minimalist portfolio with a retro gaming influence. The design will use subtle retro gaming details to preserve the minimalist theme. Specific decorative treatments and imagery remain to be decided.
+A minimalist portfolio with a retro gaming influence, expressed through selective pixel typography, section icons, subtle pixel borders, and the approved cozy PC illustration.
 
 ### 2. What color scheme will you use and why?
 
@@ -113,7 +113,7 @@ Subtle retro gaming touches will reflect my interest in gaming, while the minima
 
 ### 5. What layout will your homepage follow?
 
-The Home section will use a split layout, with my name, introduction, and action buttons on the left and a visual on the right. The visual will be a small retro scene depicting a cozy PC setup; an original illustration will be created for review and may be replaced if it does not suit the design. On mobile, the introduction and action buttons will appear first, followed by the PC scene.
+The Home section will use a split layout, with my name, introduction, and action buttons on the left and the approved original cozy PC illustration on the right. On mobile, the introduction and action buttons will appear first, followed by the PC scene.
 
 ### 6. How will you organize project sections visually?
 
@@ -141,7 +141,7 @@ A small retro scene of a cozy PC setup in the Home section will support the gami
 
 ### 12. What portfolio websites inspired your design?
 
-[Gazi Jarin's portfolio](https://www.gazijarin.com/) is a user-selected inspiration reference. Its dark presentation, generous spacing, prominent introduction, restrained bright accents, and simple section navigation offer useful reference points. The clean layout and colors are the main inspiration; the game elements also appeal to me as a secondary influence. My design will keep gaming details subtle to preserve minimalism. My portfolio will retain its approved original direction: green-tinted charcoal, emerald accents, selective slim pixel lettering, a cozy PC illustration, left-side Home text, and alternating wide project entries. A separate Game Mode has not been selected; specific interactive features will be decided in Phase 3. The implementation, artwork, and content will be original.
+[Gazi Jarin's portfolio](https://www.gazijarin.com/) is a user-selected inspiration reference. Its dark presentation, generous spacing, prominent introduction, restrained bright accents, and simple section navigation offer useful reference points. The clean layout and colors are the main inspiration; the game elements also appeal to me as a secondary influence. My design will keep gaming details subtle to preserve minimalism. My portfolio will retain its approved original direction: green-tinted charcoal, emerald accents, selective slim pixel lettering, a cozy PC illustration, left-side Home text, and alternating wide project entries. A separate Game Mode is excluded; selected interactions are active-section navigation and expandable projects. The implementation, artwork, and content will be original.
 
 ## Visual design
 
@@ -149,9 +149,9 @@ A small retro scene of a cozy PC setup in the Home section will support the gami
 
 The established design direction is minimalist retro with the approved green-tinted charcoal/emerald palette. The user approved the desktop/mobile wireframes and Pixelify Sans + Inter font pairing. The saved illustration and original icons are also approved. Phase 2 design planning is complete; implementation and rendered accessibility verification remain for later phases.
 
-- Approved typography: **Pixelify Sans Regular (400)** for headings and small accents, **Inter Regular (400)** for body text; 500 for occasional emphasis. [Font sample](docs/design/font-sample.html). The font pairing is approved. Website font delivery will be decided in the technical plan.
+- Approved typography: **Pixelify Sans Regular (400)** for headings and small accents, **Inter Regular (400)** for body text; 500 for occasional emphasis. [Font sample](docs/design/font-sample.html). Fonts will be hosted locally with their license notices.
 - [Desktop wireframe](docs/wireframes/desktop.png): split Home, wide alternating projects, About resume access, and Contact section.
-- [Mobile wireframe](docs/wireframes/mobile.png): Home text/buttons before artwork; project text before visuals. Navigation is shown as wrapping links; any menu behavior is reserved for Phase 3.
+- [Mobile wireframe](docs/wireframes/mobile.png): Home text/buttons before artwork; project text before visuals. Navigation uses wrapping links and stays visible during scrolling, as approved in Phase 3.
 - [Original cozy PC concept](docs/design/cozy-pc-concept.png): the approved AI-generated illustration is saved and placed in both wireframes. It follows the same cozy PC direction as the earlier concept. It is illustrative rather than a depiction of the user's actual equipment.
 - Approved section icons: original small pixel motifs (person, code brackets, folder, envelope), paired with visible headings. [Icon review sheet](docs/design/pixel-icons.png). Individual currentColor SVGs are saved as docs/design/icon-about.svg, icon-skills.svg, icon-projects.svg, and icon-contact.svg. The low-fidelity wireframes retain square placement markers; the actual illustration and SVG icon designs are approved.
 
@@ -173,3 +173,102 @@ Calculated contrast ratios against background / panel respectively: main text 15
 - If fonts are distributed with the website, retain their license/copyright notices. No font files have been added yet.
 - Approved original illustration generated with OpenAI image generation. Approved original section icons were drawn for this project, without an external icon dependency.
 - Soft Steps/game screenshots, actual classifier output, resume PDF, and public-sharing confirmation remain user asset follow-ups before implementation/publication.
+
+## Interactivity questions
+
+### 1. What interactive elements will your site include (navigation menus, buttons, forms)?
+
+Section navigation with an active-section indicator, expandable project details, and links for contact, project resources, and resume access. Navigation stays visible while scrolling, with wrapping links on mobile. Each project initially shows its summary, technologies, and visual; visitors can expand additional approved information. A separate Game Mode, copy-email button, and PC screen toggle are not included in the selected feature set.
+
+### 2. Will your site include a contact form? How will it work?
+
+No contact form. Visitors will use an email link to mendaj@farmingdale.edu, which asks their device to open its configured email application. The address will also remain visible for manual use. No external form service or copy-email button is planned.
+
+### 3. What JavaScript features will you implement?
+
+JavaScript will track the current section as visitors scroll and update its navigation indicator using IntersectionObserver. Project details will use native HTML details/summary controls, so expansion does not depend on JavaScript. CSS will provide smooth section scrolling unless the visitor prefers reduced motion. No form processing or game functionality is planned.
+
+### 4. How will users receive feedback from interactions?
+
+The current navigation link will use emerald text and an underline, so its state is not conveyed by color alone. Project controls will change between "Show details" and "Hide details," with expanded/collapsed states available to assistive technology. Controls will support keyboard use and visible focus. Multiple projects can remain expanded at once. The email link opens the visitor's configured email application; the website will not claim that a message has been sent.
+
+### 5. How does interactivity improve the user experience?
+
+Persistent section navigation and the active-section indicator help visitors move through the single-page portfolio and understand their location. Expandable details keep the initial project overview concise while allowing visitors to explore my contributions and additional approved information. Email-link contact provides a direct way to reach me about opportunities. Keyboard support, visible states, and reduced-motion behavior make these interactions usable by more visitors.
+
+## Interaction/functionality
+
+Approved navigation remains visible during scrolling and uses wrapping links on mobile. The current section is identified with emerald text and an underline. In-page navigation uses smooth scrolling unless reduced motion is preferred.
+
+Projects initially display their summary, technologies, and visual. "Show details" reveals individual contributions and additional approved information; the control changes to "Hide details" when expanded. Multiple entries may remain expanded. Controls must support keyboard use, visible focus, and accessible expanded/collapsed states.
+
+Contact uses an email link with the address visible for manual use. No contact form, external submission service, or separate Game Mode is planned. The technical and verification plans below are approved; implementation remains paused until requested.
+
+## Technical overview
+
+Approved setup: original semantic HTML, CSS, and vanilla JavaScript, with separate stylesheet/script files and locally hosted fonts. No framework, package manager, build step, backend, external form service, or JavaScript library is needed. Browser features will provide the small interaction set. The existing Python scripts under docs/design reproduce planning assets; they are not website runtime dependencies.
+
+### File organization and font delivery
+
+The following paths are planned; website files have not been created yet.
+
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Single page with Home, About, Skills, Projects & Research, Contact |
+| `css/styles.css` | Shared design rules, layouts, responsive and interaction states |
+| `js/main.js` | Active-section tracking and any small interaction enhancements |
+| `assets/images/` | Approved artwork, SVG icons, and supplied project screenshots |
+| `assets/fonts/` | Pixelify Sans 400 and Inter 400/500 font files with license notices |
+| `assets/resume/` | Supplied and approved public resume PDF |
+| `docs/` | Existing wireframes and design source/review assets |
+
+Use lowercase, hyphenated asset names and relative URLs that work under the repository's GitHub Pages subpath. CSS font/image paths resolve relative to the stylesheet. Retain approved planning assets under docs; prepare appropriately sized website copies during implementation. Do not create fake screenshots, classifier output, resume content, or project links.
+
+Fonts will use local WOFF2 files, `@font-face`, `font-display: swap`, and suitable system fallbacks. Retain the original font license and copyright notices. Font acquisition and loading checks are implementation tasks, not completed work.
+
+### Approved implementation plan
+
+- Use real section-anchor links and a sticky header. Account for its wrapped height when positioning anchor targets so headings and keyboard focus are not obscured. Preserve normal URL hashes and browser Back behavior.
+- Use IntersectionObserver for active-section tracking, with one current link marked visually and with `aria-current="location"`. Recalculate for viewport/header changes and expanded project content; verify short sections and the bottom Contact section. Passive scrolling must not move keyboard focus or generate repeated live announcements. Without JavaScript, ordinary section navigation remains usable without a dynamic indicator.
+- Use native `details`/`summary` for independent project disclosures, initially collapsed, with Show/Hide labels reflecting the open state. Native disclosure behavior provides keyboard operation and expanded state without a custom widget. Keep essential summaries, technologies, visuals, and resource links outside the collapsed details. No exclusive accordion group. Verify actual screen-reader output before claiming accessibility.
+- Tab/Shift+Tab follow the document order; Enter activates links; Enter/Space toggle project disclosures. Focus remains on the disclosure control when toggled. No custom arrow-key scheme or focus trap is needed. A skip link reaches main content.
+- Use CSS smooth scrolling only when reduced motion is not requested; project expansion need not animate. Do not intercept normal email, resume, or external-link behavior.
+
+### Technical references
+
+- [MDN: IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver)
+- [MDN: details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details)
+- [MDN: reduced-motion media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion)
+- [MDN: font-display](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display)
+- [GitHub: creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+
+## Verification plan
+
+Approved checks for implementation and publication; none have been run against a website yet.
+
+| Area | Checks |
+| --- | --- |
+| Content and document | Confirm all 30 answers and required sections, actual project contributions, upcoming/in-progress labels, resource credits, and approved assets |
+| Layout | Check approximately 320, 375, 768, 1024, and 1440 px widths plus intermediate resizing; text-first mobile order; no unintended horizontal overflow; readable text at 200% zoom |
+| Keyboard and accessibility | Complete keyboard journey, skip link, visible/unobscured focus, disclosure Enter/Space behavior, logical headings/landmarks, meaningful alternatives, accessible disclosure state, current-link state, contrast and reduced motion |
+| Interactions | Scroll and click through every section in both directions; direct hash loads and Back; active indicator after resizing and expanding projects; open multiple projects and close independently |
+| Resilience | Disable JavaScript and block font loading: content, anchors, disclosures, email, and resume access remain usable; fallback text remains readable |
+| Assets and links | Check exact filename case, relative paths, font licenses, no broken requests, actual classifier output, resume view/download, and supplied professional/project URLs |
+| Browser and live site | Check in available Chromium and Firefox browsers; test touch/narrow layouts and note device limitations; inspect console/network errors; after authorized publishing, repeat essential checks on the actual GitHub Pages URL |
+
+Record actual results and limitations during implementation. Planning contrast calculations and design reviews are not substitutes for these checks.
+
+## Timeline/project milestones
+
+User-supplied deadline: **October 30, 2026, at 11:59 p.m.** Eastern time is assumed from the user's local timezone; confirm if the course specifies otherwise. The following is the approved target schedule, not a record of completed implementation work. Final planning review was approved October 29; asset intake remains outstanding.
+
+| Target | Milestone and completion condition |
+| --- | --- |
+| October 29 | Final planning review and asset intake: agree on technical/verification plan; obtain resume, screenshots, classifier output, URLs, and public-sharing confirmations |
+| October 29-30 | Phase 4: semantic page and approved content, usable anchors and native disclosures; review and focused commit when authorized |
+| October 30 | Phase 5: approved responsive design, local fonts, and accessible states; review and focused commits when authorized |
+| October 30 | Phase 6: active-section JavaScript and interaction checks; review and focused commit when authorized |
+| October 30, before submission | Phase 7: complete verification, fix issues, obtain push/publication authorization, verify live site, and finalize README with repository/live URLs |
+| October 30, before 11:59 p.m. | User submits the two verified URLs to Brightspace; leave time for deployment and corrections |
+
+Missing assets or permissions must be resolved or explicitly re-scoped with the user. Website implementation has not begun and remains paused until requested.
