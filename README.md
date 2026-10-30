@@ -79,8 +79,8 @@ Use one scrolling page in this order: Home, About, Skills, Projects & Research, 
 ## Content and asset follow-up tasks
 
 - [x] Obtain the resume PDF and approve and implement its education/research summary.
-- [ ] Collect repository or demo URLs for each project where available; confirm whether each can be shared publicly.
-- [ ] Collect available project screenshots or other approved visuals during design planning; record any projects without suitable images.
+- [x] Obtain Soft Steps/game repository URLs and permission to share supplied project screenshots and classifier results. No classifier repository or demos supplied.
+- [x] Integrate all four supplied Soft Steps/game screenshots with captions and alternatives; actual classifier notebook output is reviewed and implemented.
 - [ ] Verify supplied professional links before publication.
 
 ## Design questions
@@ -137,7 +137,7 @@ Body text will use a readable font, with pixel typography reserved for headings 
 
 ### 11. Will you use icons, images, or illustrations? Why?
 
-A small retro scene of a cozy PC setup in the Home section will support the gaming influence. Available screenshots of Soft Steps and the 2D Mystery Game can help visitors understand those projects. The SMS Spam Classifier will use a terminal-style panel showing a short example of actual text output alongside its description. Project screenshots and classifier output still need to be supplied and reviewed. Small pixel-style icons will accompany section headings. The original cozy PC illustration and four pixel-style section icons have been created and approved. Any external replacements will require suitable licensing and credit, and resources used in creating the artwork will be documented.
+A small retro scene of a cozy PC setup in the Home section will support the gaming influence. Available screenshots of Soft Steps and the 2D Mystery Game can help visitors understand those projects. The SMS Spam Classifier will use a terminal-style panel showing a short example of actual text output alongside its description. Two Soft Steps and two game screenshots have been supplied; all four screenshots are now saved locally and implemented. Actual classifier notebook output has been reviewed and added as HTML text. Small pixel-style icons will accompany section headings. The original cozy PC illustration and four pixel-style section icons have been created and approved. Any external replacements will require suitable licensing and credit, and resources used in creating the artwork will be documented.
 
 ### 12. What portfolio websites inspired your design?
 
@@ -172,7 +172,7 @@ Calculated contrast ratios against background / panel respectively: main text 15
 - [Inter](https://fonts.google.com/specimen/Inter), [source and SIL OFL 1.1 license](https://github.com/rsms/inter).
 - If fonts are distributed with the website, retain their license/copyright notices. No font files have been added yet.
 - Approved original illustration generated with OpenAI image generation. Approved original section icons were drawn for this project, without an external icon dependency.
-- Soft Steps/game screenshots, actual classifier output, resume PDF, and public-sharing confirmation remain user asset follow-ups before implementation/publication.
+- Resume and approved HTML summary are implemented. Project screenshots and actual classifier notebook output have been supplied, and public sharing is approved. Classifier output is implemented; screenshot transfer remains pending.
 
 ## Interactivity questions
 
@@ -278,7 +278,7 @@ Missing assets or permissions must be resolved or explicitly re-scoped with the 
 
 Semantic index.html includes all five sections, landmarks, a skip link, navigation anchors, logical headings, descriptive contact links, approved text/artwork, and three independent native project disclosures. Essential summaries and technologies remain outside collapsed details. Decorative artwork and icons use empty alternatives.
 
-The resume PDF is supplied and its education/research summary is approved and implemented. Project screenshots, actual classifier output, project URLs, and project public-sharing confirmations remain pending. No fabricated assets or placeholder links were added. Phase 4 remains incomplete; scope has not been reduced.
+The resume PDF is supplied and its education/research summary is approved and implemented. Project materials, two repository URLs, and public-sharing permission are supplied. All four screenshots are integrated; browser interaction checks remain pending. No fabricated assets or placeholder links were added. Phase 4 remains incomplete; scope has not been reduced.
 
 Static checks passed for unique IDs, anchor/label targets, existing local assets, one h1, image alternatives, three independent initially closed disclosures, and no CSS/JS dependencies. git diff --check passed. Browser keyboard, skip focus, disclosure operation, screen-reader output, and external links remain unverified. Phase 5 will add state-dependent Show/Hide labels; current native labels describe project contributions. Styling/fonts and active-section JavaScript remain for Phases 5 and 6. No commit, push, or publication performed.
 
@@ -288,4 +288,16 @@ Resume intake update: corrected PDF received and reviewed without the phone plac
 
 Approved resume summary: **Education:** BS in Computer Programming and Information Systems at Farmingdale State College, expected 2028. **Research experience:** SURI undergraduate research intern, summer 2026. Developed FastAPI endpoints, integrated the Gemini API, implemented MongoDB data operations, and collaborated using Git and GitHub.
 
-Project intake: user is locating Soft Steps screenshots and actual SMS classifier output/screenshots. The game remains in development and may have no screenshot available; text-only presentation is an option pending confirmation.
+Project intake complete: two screenshots each for Soft Steps and the in-progress game, and saved classifier notebook output supplied. User approved public display. The user supplied all four files locally; they are visually inspected and integrated with descriptive alternatives and captions.
+
+
+### Project resources and results
+
+- [Soft Steps source repository](https://github.com/michellemorales/soft_steps_app)
+- [2D Mystery Game source repository](https://github.com/ethanmiku/CSC325_CAPSTONE)
+- Classifier has no supplied repository/demo URL. Its actual saved notebook output is displayed outside collapsed details: accuracy 97.76%, spam precision 95.59%, spam recall 87.25%; test set 1,115 messages. Model was not rerun.
+- User authorized public use of all supplied screenshots and classifier results. All four screenshots were supplied locally after transfer failed. They are visually inspected and added outside collapsed details with captions and descriptive alternatives.
+- Checkpoint commit 3ac9bb9 verified. Current repository-link/result changes remain uncommitted; no push/publication.
+
+
+Screenshot integration check: all four PNG files open correctly and match their project labels. Images retain their original pixels and include prototype captions. All local HTML targets, anchors, unique IDs and image alternatives passed static checks. Browser verification was blocked because the browser tool rejects file:// URLs; keyboard/skip-focus and disclosure interaction checks remain pending. Responsive image sizing remains Phase 5 work.

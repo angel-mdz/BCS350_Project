@@ -60,12 +60,22 @@
     </section>
     <section id="projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading"><img src="assets/images/icon-projects.svg" alt="" width="24" height="24"> Projects &amp; Research</h2>
-      <!-- Keep project overviews and technologies outside disclosures. Add supplied
-           visuals and approved resource links here, outside details, after intake. -->
+      <!-- Keep essential project summaries, results, visuals, and resource links
+           outside disclosures so they remain accessible when details are closed. -->
       <article aria-labelledby="soft-steps-heading">
         <h3 id="soft-steps-heading">Soft Steps</h3>
         <p>A mental wellness mobile app prototype developed through the SURI program under OURS at Farmingdale State College during summer 2026.</p>
         <p><strong>Technologies:</strong> Expo, React, FastAPI, MongoDB, Gemini API.</p>
+        <p><a href="https://github.com/michellemorales/soft_steps_app">Explore the Soft Steps source code on GitHub</a></p>
+        <figure>
+          <img src="assets/images/soft-steps-welcome.png" alt="Soft Steps welcome screen offering Choose My Step and guidance for choosing, practicing, and celebrating a brave step." width="640" loading="lazy">
+          <figcaption>Soft Steps prototype: welcome and first-step selection.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/soft-steps-reflection.png" alt="Soft Steps Reflection Space showing a current brave step, a 1-to-10 feeling scale, a conversation prompt, and a reflection input." width="640" loading="lazy">
+          <figcaption>Soft Steps prototype: reflection and conversation screen.</figcaption>
+        </figure>
+
         <!-- No shared name attribute: each disclosure can stay open independently. -->
         <details>
           <summary>My Soft Steps contributions and research</summary>
@@ -76,7 +86,18 @@
       <article aria-labelledby="classifier-heading">
         <h3 id="classifier-heading">SMS Spam Classifier</h3>
         <p>An introductory machine learning project that classifies SMS messages using a Naive Bayes classifier. This project produces text output and has no graphical interface.</p>
-        <p><strong>Technologies:</strong> Python, scikit-learn, Naive Bayes.</p>
+        <p><strong>Technologies:</strong> Python, scikit-learn, CountVectorizer, Multinomial Naive Bayes.</p>
+        <figure aria-labelledby="classifier-results-caption">
+          <figcaption id="classifier-results-caption">Saved notebook evaluation output</figcaption>
+          <pre><samp>Accuracy: 0.9775784753363229
+Recall: 0.87248322147651
+Precision: 0.9558823529411765
+Confusion Matrix:
+[[960   6]
+ [ 19 130]]</samp></pre>
+        </figure>
+        <p>Evaluated on 1,115 test messages from an 80/20 stratified split of 5,572 messages. Accuracy was 97.76%; spam precision was 95.59% and spam recall was 87.25%. These are saved notebook results.</p>
+        <p>The confusion matrix uses actual labels as rows and predicted labels as columns, ordered ham (non-spam), then spam: 960 ham messages and 130 spam messages were classified correctly; 6 ham messages were marked as spam and 19 spam messages were missed.</p>
         <details>
           <summary>My SMS Spam Classifier contributions</summary>
           <p>I prepared data, trained a Naive Bayes classifier, and evaluated its performance.</p>
@@ -86,6 +107,16 @@
         <h3 id="game-heading">2D Mystery Game — in progress</h3>
         <p>A class project combining a Godot game with a Django backend, MongoDB, and Claude integration.</p>
         <p><strong>Technologies:</strong> Godot, Django, MongoDB, Claude.</p>
+        <p><a href="https://github.com/ethanmiku/CSC325_CAPSTONE">Explore the 2D Mystery Game source code on GitHub</a></p>
+        <figure>
+          <img src="assets/images/mystery-game-dialogue.png" alt="Pixel-art detective speaking with Arthur, the manor's butler, whose introduction appears in a dialogue box." width="640" loading="lazy">
+          <figcaption>In-progress game prototype: conversation with Arthur.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/mystery-game-scene.png" alt="Pixel-art manor interior with a detective, a butler, a chandelier over a red rug, and an interaction control." width="640" loading="lazy">
+          <figcaption>In-progress game prototype: manor exploration scene.</figcaption>
+        </figure>
+
         <details>
           <summary>My 2D Mystery Game responsibilities</summary>
           <p>I am responsible for designing endpoints that handle HTTP requests from Godot, communicate with MongoDB, and call Claude.</p>
