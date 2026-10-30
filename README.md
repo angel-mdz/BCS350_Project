@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Personal portfolio for Angel Mendez Reyes. Phases 1-3 of this Web Design Document are complete and approved: content, visual design, interactivity, technical approach, verification plan, and milestones. Phase 4 semantic HTML and Phase 5 responsive styling/local fonts are implemented. Automated Chrome checks passed as recorded below; the user approved visual, responsive, actual 200% browser zoom, navigation and screenshot-return checks and reports Windows Narrator works. Cross-browser and physical-device verification remain outstanding. Phase 6 active-section JavaScript is next after visual review.
+Personal portfolio for Angel Mendez Reyes. Phases 1-3 of this Web Design Document are complete and approved: content, visual design, interactivity, technical approach, verification plan, and milestones. Phase 4 semantic HTML and Phase 5 responsive styling/local fonts are implemented. Automated Chrome checks passed as recorded below; the user approved visual, responsive, actual 200% browser zoom, navigation and screenshot-return checks and reports Windows Narrator works. Cross-browser and physical-device verification remain outstanding. Phase 6 active-section JavaScript is implemented and automated Chrome checks pass; user-reported 200% browser zoom, indicator/focus and Chrome/Edge checks passed. User also confirmed Narrator with the new script works; Phase 6 is complete.
 
 ## Content questions
 
@@ -202,7 +202,7 @@ Approved navigation remains visible during scrolling and uses wrapping links on 
 
 Projects initially display their summary, technologies, and visual. "Show details" reveals individual contributions and additional approved information; the control changes to "Hide details" when expanded. Multiple entries may remain expanded. Controls must support keyboard use, visible focus, and accessible expanded/collapsed states.
 
-Contact uses an email link with the address visible for manual use. No contact form, external submission service, or separate Game Mode is planned. The technical and verification plans below are approved; HTML and CSS are implemented, with active-section JavaScript reserved for Phase 6.
+Contact uses an email link with the address visible for manual use. No contact form, external submission service, or separate Game Mode is planned. The technical and verification plans below are approved; HTML, CSS, and the Phase 6 active-section script are implemented.
 
 ## Technical overview
 
@@ -210,13 +210,13 @@ Approved setup: original semantic HTML, CSS, and vanilla JavaScript, with separa
 
 ### File organization and font delivery
 
-The HTML, stylesheet, images, local fonts/licenses, and resume paths exist. js/main.js remains planned for Phase 6.
+The HTML, stylesheet, deferred js/main.js, images, local fonts/licenses, and resume paths exist.
 
 | Path | Purpose |
 | --- | --- |
 | `index.html` | Single page with Home, About, Skills, Projects & Research, Contact |
 | `css/styles.css` | Shared design rules, layouts, responsive and interaction states |
-| `js/main.js` | Active-section tracking and any small interaction enhancements |
+| `js/main.js` | Active-section navigation indicator |
 | `assets/images/` | Approved artwork, SVG icons, and supplied project screenshots |
 | `assets/fonts/` | Pixelify Sans 400 and Inter 400/500 font files with license notices |
 | `assets/resume/` | Supplied and approved public resume PDF |
@@ -326,4 +326,20 @@ User reports Windows Narrator works (basic manual check; not a full accessibilit
 
 User confirmed actual browser-menu 200% zoom, responsive layouts, visual presentation and section-heading clearance look good. Remaining: Firefox/other browser and physical touch-device checks, plus final live-site checks after authorized publication. The 320 px header is tall because links wrap; it remains usable in the measured 900 px window, and short windows omit the brand row while retaining navigation. No claim of full assistive-technology or cross-browser verification. Supplied content, resume, project URLs, in-progress game and upcoming IGNITE wording remain intact. Classifier metrics are saved results, not a new model run.
 
-Phase 5 is complete and user approved. Changes await commit authorization. No commit, push or publication performed. Next implementation task: Phase 6 active-section tracking.
+Phase 5 is complete and user approved; implementation commit ab57b32 (style: complete responsive portfolio desing) verified in local history. No push or publication performed by this assistant. Next implementation task: Phase 6 active-section tracking.
+
+### Phase 6 implementation and verification - October 30, 2026
+
+Deferred js/main.js observes all five sections with IntersectionObserver and marks exactly one primary navigation link with aria-current="location". Existing CSS supplies emerald text and an underline. Selection uses section positions at a reading line matching CSS anchor clearance below the sticky header, with a bottom-of-page override for short Contact. ResizeObserver, viewport resize, font readiness, load/pageshow and disclosure toggles refresh geometry; a passive, animation-frame-coalesced scroll check handles short sections and large jumps. Missing observer APIs retain a scroll/resize fallback. Only changed current-link attributes are written. Native anchors retain scrolling, hashes, browser history and focus behavior; no live region or focus manipulation is added.
+
+| Phase 6 check | Actual result |
+| --- | --- |
+| Chrome execution | Headless installed Chrome; local HTTP server attempted but browser network access denied. Playwright supplied repository files as intercepted HTTP responses at a test origin instead; this verifies browser behavior, not actual server or live delivery |
+| Section navigation | All five sections passed click and programmatic passive-scroll journeys in both directions at 320, 375, 768, 1024 and 1440 px; exactly one current link verified after each step |
+| Hash and history | All five direct hashes and reloads passed; Back from Skills to About to Home passed; passive scrolling preserved hash and history length |
+| Geometry | Wrapped navigation, viewport changes including 450 px height, project expansion, bottom Contact, and artificially shortened About/Skills sections passed |
+| Keyboard and resilience | Skip-link Tab/Enter passed; summary Enter/Space retained focus; multiple disclosures stayed open; passive scroll preserved focus. Additional checks passed with an artificially taller header and with fonts blocked and both observer APIs unavailable. JavaScript-disabled section anchors, disclosure opening and all five content sections passed |
+| Motion and zoom | Normal smooth and reduced-motion navigation passed; CSS zoom:2 at 1440x900 passed section selection and overflow. This is an approximation, not a new actual browser-menu zoom check |
+| Errors | No page JavaScript or console errors in the main automated suite; syntax, unique IDs, local targets and diff whitespace checks passed |
+
+No content, design, fonts, screenshot links, resume or project links changed. Phase 5 approval remains recorded above. User confirmed actual 200% browser zoom, keyboard outlines and current-section indication work, and reported successful checks in Chrome and Edge on October 30. User subsequently confirmed Narrator with the script enabled works (basic manual check, not a full accessibility audit). Phase 6 is complete. Firefox, physical touch-device and live-site checks remain unverified. Changes are uncommitted; no push/publication performed. After commit authorization, continue with Phase 7 assignment/link/path review and authorized GitHub Pages publication.
