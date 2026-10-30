@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Personal portfolio for Angel Mendez Reyes. Phases 1-3 of this Web Design Document are complete and approved: content, visual design, interactivity, technical approach, verification plan, and milestones. Phase 4 semantic HTML is underway with approved text and artwork. Missing personal assets and public-sharing confirmations remain explicit follow-up tasks.
+Personal portfolio for Angel Mendez Reyes. Phases 1-3 of this Web Design Document are complete and approved: content, visual design, interactivity, technical approach, verification plan, and milestones. Phase 4 semantic HTML and Phase 5 responsive styling/local fonts are implemented. Automated Chrome checks passed as recorded below; the user approved visual, responsive, actual 200% browser zoom, navigation and screenshot-return checks and reports Windows Narrator works. Cross-browser and physical-device verification remain outstanding. Phase 6 active-section JavaScript is next after visual review.
 
 ## Content questions
 
@@ -54,7 +54,7 @@ The primary action is to contact me about job or research opportunities. Viewing
 
 ### 12. Will you include a resume? In what format?
 
-Yes. The About section will include a concise education and experience summary as HTML text, with a link to view or download my full resume as a PDF. This keeps key information readable within the scrolling page while providing the complete document. The resume file still needs to be provided; the summary will be based on approved content and the supplied resume.
+Yes. The About section will include a concise education and experience summary as HTML text, with a link to view or download my full resume as a PDF. This keeps key information readable within the scrolling page while providing the complete document. The supplied resume and approved education/research summary are implemented.
 
 ### 13. What social or professional links will you include (GitHub, LinkedIn, etc.)?
 
@@ -117,7 +117,7 @@ The Home section will use a split layout, with my name, introduction, and action
 
 ### 6. How will you organize project sections visually?
 
-Projects will appear as wider, stacked entries with room for project visuals, descriptions, and my individual contributions. Screenshots are available for Soft Steps and the 2D Mystery Game but have not yet been supplied or reviewed. The SMS Spam Classifier produces text output and has no GUI; a short example of its actual output will be shown in a terminal-style panel alongside its description. The output still needs to be supplied and reviewed. On desktop, successive entries will alternate the visual and description between the left and right sides. On mobile, each project will show its title and description first, followed by its screenshot or terminal panel.
+Projects will appear as wider, stacked entries with room for project visuals, descriptions, and my individual contributions. The supplied and reviewed Soft Steps and 2D Mystery Game screenshots are implemented. The SMS Spam Classifier produces text output and has no GUI; a short example of its actual output will be shown in a terminal-style panel alongside its description. The supplied saved notebook output is implemented; the model was not rerun. On desktop, successive entries will alternate the visual and description between the left and right sides. On mobile, each project will show its title and description first, followed by its screenshot or terminal panel.
 
 ### 7. Will the site be mobile-friendly? How will you ensure responsiveness?
 
@@ -170,9 +170,9 @@ Calculated contrast ratios against background / panel respectively: main text 15
 - Inspiration: [Gazi Jarin](https://www.gazijarin.com/), especially clean spacing and restrained dark/bright colors. No source code or artwork copied.
 - [Pixelify Sans](https://fonts.google.com/specimen/Pixelify+Sans), [source and SIL OFL 1.1 license](https://github.com/eifetx/Pixelify-Sans).
 - [Inter](https://fonts.google.com/specimen/Inter), [source and SIL OFL 1.1 license](https://github.com/rsms/inter).
-- If fonts are distributed with the website, retain their license/copyright notices. No font files have been added yet.
+- If fonts are distributed with the website, retain their license/copyright notices. Local Latin WOFF2 fonts and original license notices are included under assets/fonts/.
 - Approved original illustration generated with OpenAI image generation. Approved original section icons were drawn for this project, without an external icon dependency.
-- Resume and approved HTML summary are implemented. Project screenshots and actual classifier notebook output have been supplied, and public sharing is approved. Classifier output is implemented; screenshot transfer remains pending.
+- Resume and approved HTML summary are implemented. Project screenshots and actual classifier notebook output have been supplied, and public sharing is approved. Classifier output and all four screenshots are implemented.
 
 ## Interactivity questions
 
@@ -202,7 +202,7 @@ Approved navigation remains visible during scrolling and uses wrapping links on 
 
 Projects initially display their summary, technologies, and visual. "Show details" reveals individual contributions and additional approved information; the control changes to "Hide details" when expanded. Multiple entries may remain expanded. Controls must support keyboard use, visible focus, and accessible expanded/collapsed states.
 
-Contact uses an email link with the address visible for manual use. No contact form, external submission service, or separate Game Mode is planned. The technical and verification plans below are approved; Phase 4 implementation is underway.
+Contact uses an email link with the address visible for manual use. No contact form, external submission service, or separate Game Mode is planned. The technical and verification plans below are approved; HTML and CSS are implemented, with active-section JavaScript reserved for Phase 6.
 
 ## Technical overview
 
@@ -210,7 +210,7 @@ Approved setup: original semantic HTML, CSS, and vanilla JavaScript, with separa
 
 ### File organization and font delivery
 
-index.html and assets/images/ now exist; remaining paths are planned.
+The HTML, stylesheet, images, local fonts/licenses, and resume paths exist. js/main.js remains planned for Phase 6.
 
 | Path | Purpose |
 | --- | --- |
@@ -224,7 +224,7 @@ index.html and assets/images/ now exist; remaining paths are planned.
 
 Use lowercase, hyphenated asset names and relative URLs that work under the repository's GitHub Pages subpath. CSS font/image paths resolve relative to the stylesheet. Retain approved planning assets under docs; prepare appropriately sized website copies during implementation. Do not create fake screenshots, classifier output, resume content, or project links.
 
-Fonts will use local WOFF2 files, `@font-face`, `font-display: swap`, and suitable system fallbacks. Retain the original font license and copyright notices. Font acquisition and loading checks are implementation tasks, not completed work.
+Fonts will use local WOFF2 files, `@font-face`, `font-display: swap`, and suitable system fallbacks. Retain the original font license and copyright notices. Local Latin WOFF2 files and original SIL OFL notices are included. Chrome confirmed local loading and usable system fallbacks when fonts were blocked. See assets/fonts/README.md for exact sources.
 
 ### Approved implementation plan
 
@@ -244,7 +244,7 @@ Fonts will use local WOFF2 files, `@font-face`, `font-display: swap`, and suitab
 
 ## Verification plan
 
-Approved checks for implementation and publication; initial static checks are recorded below; browser verification remains pending.
+Approved checks for implementation and publication. Phase 4 static checks and user-reported browser checks are recorded below; styled, scripted, screen-reader and live verification remain for later phases.
 
 | Area | Checks |
 | --- | --- |
@@ -260,7 +260,7 @@ Record actual results and limitations during implementation. Planning contrast c
 
 ## Timeline/project milestones
 
-User-supplied deadline: **October 30, 2026, at 11:59 p.m.** Eastern time is assumed from the user's local timezone; confirm if the course specifies otherwise. The following is the approved target schedule, not a record of completed implementation work. Final planning review was approved October 29; asset intake remains outstanding.
+User-supplied deadline: **October 30, 2026, at 11:59 p.m.** Eastern time is assumed from the user's local timezone; confirm if the course specifies otherwise. The following is the approved target schedule, not a record of completed implementation work. Final planning review was approved October 29; asset intake and Phase 4 implementation are complete.
 
 | Target | Milestone and completion condition |
 | --- | --- |
@@ -271,16 +271,16 @@ User-supplied deadline: **October 30, 2026, at 11:59 p.m.** Eastern time is assu
 | October 30, before submission | Phase 7: complete verification, fix issues, obtain push/publication authorization, verify live site, and finalize README with repository/live URLs |
 | October 30, before 11:59 p.m. | User submits the two verified URLs to Brightspace; leave time for deployment and corrections |
 
-Missing assets or permissions must be resolved or explicitly re-scoped with the user. Phase 4 is underway; missing material remains pending.
+Missing assets or permissions must be resolved or explicitly re-scoped with the user. Phases 4 and 5 are complete and user approved; remaining broader verification is recorded below. Phase 6 adds active-section tracking.
 
 
 ### Phase 4 implementation status — October 29, 2026
 
 Semantic index.html includes all five sections, landmarks, a skip link, navigation anchors, logical headings, descriptive contact links, approved text/artwork, and three independent native project disclosures. Essential summaries and technologies remain outside collapsed details. Decorative artwork and icons use empty alternatives.
 
-The resume PDF is supplied and its education/research summary is approved and implemented. Project materials, two repository URLs, and public-sharing permission are supplied. All four screenshots are integrated; browser interaction checks remain pending. No fabricated assets or placeholder links were added. Phase 4 remains incomplete; scope has not been reduced.
+The resume PDF is supplied and its education/research summary is approved and implemented. Project materials, two repository URLs, and public-sharing permission are supplied. All four screenshots are integrated. Static checks passed and the user reported the Phase 4 keyboard, disclosure and link checks all work. No fabricated assets or placeholder links were added. Phase 4 is complete.
 
-Static checks passed for unique IDs, anchor/label targets, existing local assets, one h1, image alternatives, three independent initially closed disclosures, and no CSS/JS dependencies. git diff --check passed. Browser keyboard, skip focus, disclosure operation, screen-reader output, and external links remain unverified. Phase 5 will add state-dependent Show/Hide labels; current native labels describe project contributions. Styling/fonts and active-section JavaScript remain for Phases 5 and 6. No commit, push, or publication performed.
+Static checks passed for unique IDs, anchor/label targets, existing local assets, one h1, image alternatives, three independent initially closed disclosures, and no CSS/JS dependencies. git diff --check passed. The user reported keyboard skip navigation, section anchors, independent Enter/Space disclosures, repository links and resume links work. Automated browser and screen-reader checks remain unverified. Phase 5 will add state-dependent Show/Hide labels; current native labels describe project contributions. Styling/fonts and active-section JavaScript remain for Phases 5 and 6. Implementation commits 3ac9bb9 and ca59da0 are verified; no push/publication performed in this session.
 
 
 Resume intake update: corrected PDF received and reviewed without the phone placeholder. The user supplied assets/resume/Resume_Angel.pdf locally; view and download links are now implemented and their local targets verified. The user approved the education and SURI experience summary; it is now implemented below the bio and above the PDF links.
@@ -297,7 +297,33 @@ Project intake complete: two screenshots each for Soft Steps and the in-progress
 - [2D Mystery Game source repository](https://github.com/ethanmiku/CSC325_CAPSTONE)
 - Classifier has no supplied repository/demo URL. Its actual saved notebook output is displayed outside collapsed details: accuracy 97.76%, spam precision 95.59%, spam recall 87.25%; test set 1,115 messages. Model was not rerun.
 - User authorized public use of all supplied screenshots and classifier results. All four screenshots were supplied locally after transfer failed. They are visually inspected and added outside collapsed details with captions and descriptive alternatives.
-- Checkpoint commit 3ac9bb9 verified. Current repository-link/result changes remain uncommitted; no push/publication.
+- Phase 4 commits 3ac9bb9 and ca59da0 verified in local history; no push/publication performed in this session.
 
 
-Screenshot integration check: all four PNG files open correctly and match their project labels. Images retain their original pixels and include prototype captions. All local HTML targets, anchors, unique IDs and image alternatives passed static checks. Browser verification was blocked because the browser tool rejects file:// URLs; keyboard/skip-focus and disclosure interaction checks remain pending. Responsive image sizing remains Phase 5 work.
+Screenshot integration check: all four PNG files open correctly and match their project labels. Images retain their original pixels and include prototype captions. All local HTML targets, anchors, unique IDs and image alternatives passed static checks. Browser verification was blocked because the browser tool rejects file:// URLs; the user subsequently reported skip-link, section-anchor, independent disclosure, repository-link and resume-link checks passed. Responsive image sizing remains Phase 5 work.
+
+
+### Phase 5 implementation and verification - October 29, 2026
+
+Implemented css/styles.css with the approved five palette colors, local Pixelify Sans 400 and Inter 400/500 (variable WOFF2), original SIL OFL licenses, font-display: swap and system fallbacks. Home uses text-left/art-right columns at 768 px and above. Projects alternate visual-left, visual-right, visual-left on desktop and retain text-first DOM/mobile order. Images remain uncropped, reserve intrinsic dimensions to prevent lazy-loading layout shifts, and link to the unchanged full-size originals for closer inspection. SVG website copies use emerald explicitly because external currentColor images otherwise render black; approved design source assets remain unchanged.
+
+Sticky wrapping navigation, visible skip/focus/hover states, rem-based anchor clearance, reduced-motion-aware smooth scrolling, terminal-style saved classifier output and independent native disclosures with visual Show/Hide labels are implemented. Accessible disclosure names retain the original project-specific wording; decorative action labels are hidden from assistive technology. CSS-free text remains meaningful. No active-section script or new runtime dependency was added.
+
+| Verification | Actual result |
+| --- | --- |
+| Local Chrome over HTTP | Headless Chrome loaded the page, local fonts and images; this avoids the earlier file:// tool limitation |
+| Responsive and intermediate widths | No horizontal overflow at 320, 375, 480, 640, 767, 768, 900, 1024, 1280 and 1440 px; desktop side alternation and narrow stacking measured; 375/1440 full-page captures visually reviewed |
+| Images and output | All four supplied screenshots and saved notebook output remain outside disclosures; original images preserved and full-size access provided; dimensions prevent focus-displacing lazy-load shifts |
+| Keyboard | Automated Tab journey at 320/1440 kept focus targets visible; skip Tab/Enter reaches main; summary Enter/Space toggles while retaining focus; solid focus outlines measured |
+| Disclosures | Three initially closed, unnamed native details; multiple open independently and Show/Hide presentation follows open state |
+| Anchors | All five section targets checked at 320/768/1440; narrow clearance increased to 14rem after measuring wrapped header; native hashes retained |
+| Motion and fallbacks | Reduced motion computes auto scrolling; no-preference computes smooth; blocked WOFF2 requests use fallback layout without horizontal overflow |
+| Contrast | Main text 15.55:1 / 13.65:1, secondary 8.73:1 / 7.67:1, emerald 9.39:1 / 8.25:1 against background/panel; dark primary-button text 9.39:1 |
+| Zoom resilience | 200% root text-size enlargement at a 720x450 viewport and CSS zoom:2 at 1440 px passed overflow checks; these are automated approximations, not actual browser-menu zoom |
+| Static checks | Local HTML/CSS targets exist; unique IDs, one h1, three independent disclosures, four screenshot references and no script verified; git diff --check passed |
+
+User reports Windows Narrator works (basic manual check; not a full accessibility audit). Screenshot originals now open in a clearly labeled new tab so the portfolio and scroll position remain available. Four link targets and new-tab attributes checked statically; user confirmed the screenshot-return check looks good.
+
+User confirmed actual browser-menu 200% zoom, responsive layouts, visual presentation and section-heading clearance look good. Remaining: Firefox/other browser and physical touch-device checks, plus final live-site checks after authorized publication. The 320 px header is tall because links wrap; it remains usable in the measured 900 px window, and short windows omit the brand row while retaining navigation. No claim of full assistive-technology or cross-browser verification. Supplied content, resume, project URLs, in-progress game and upcoming IGNITE wording remain intact. Classifier metrics are saved results, not a new model run.
+
+Phase 5 is complete and user approved. Changes await commit authorization. No commit, push or publication performed. Next implementation task: Phase 6 active-section tracking.
