@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Personal portfolio for Angel Mendez Reyes. Phases 1-3 of this Web Design Document are complete and approved: content, visual design, interactivity, technical approach, verification plan, and milestones. Website implementation has not started. Missing personal assets and public-sharing confirmations remain explicit follow-up tasks.
+Personal portfolio for Angel Mendez Reyes. Phases 1-3 of this Web Design Document are complete and approved: content, visual design, interactivity, technical approach, verification plan, and milestones. Phase 4 semantic HTML is underway with approved text and artwork. Missing personal assets and public-sharing confirmations remain explicit follow-up tasks.
 
 ## Content questions
 
@@ -78,7 +78,7 @@ Use one scrolling page in this order: Home, About, Skills, Projects & Research, 
 
 ## Content and asset follow-up tasks
 
-- [ ] Obtain the existing resume PDF and confirm the education and experience summary before implementation.
+- [x] Obtain the resume PDF and approve and implement its education/research summary.
 - [ ] Collect repository or demo URLs for each project where available; confirm whether each can be shared publicly.
 - [ ] Collect available project screenshots or other approved visuals during design planning; record any projects without suitable images.
 - [ ] Verify supplied professional links before publication.
@@ -202,7 +202,7 @@ Approved navigation remains visible during scrolling and uses wrapping links on 
 
 Projects initially display their summary, technologies, and visual. "Show details" reveals individual contributions and additional approved information; the control changes to "Hide details" when expanded. Multiple entries may remain expanded. Controls must support keyboard use, visible focus, and accessible expanded/collapsed states.
 
-Contact uses an email link with the address visible for manual use. No contact form, external submission service, or separate Game Mode is planned. The technical and verification plans below are approved; implementation remains paused until requested.
+Contact uses an email link with the address visible for manual use. No contact form, external submission service, or separate Game Mode is planned. The technical and verification plans below are approved; Phase 4 implementation is underway.
 
 ## Technical overview
 
@@ -210,7 +210,7 @@ Approved setup: original semantic HTML, CSS, and vanilla JavaScript, with separa
 
 ### File organization and font delivery
 
-The following paths are planned; website files have not been created yet.
+index.html and assets/images/ now exist; remaining paths are planned.
 
 | Path | Purpose |
 | --- | --- |
@@ -244,7 +244,7 @@ Fonts will use local WOFF2 files, `@font-face`, `font-display: swap`, and suitab
 
 ## Verification plan
 
-Approved checks for implementation and publication; none have been run against a website yet.
+Approved checks for implementation and publication; initial static checks are recorded below; browser verification remains pending.
 
 | Area | Checks |
 | --- | --- |
@@ -271,4 +271,21 @@ User-supplied deadline: **October 30, 2026, at 11:59 p.m.** Eastern time is assu
 | October 30, before submission | Phase 7: complete verification, fix issues, obtain push/publication authorization, verify live site, and finalize README with repository/live URLs |
 | October 30, before 11:59 p.m. | User submits the two verified URLs to Brightspace; leave time for deployment and corrections |
 
-Missing assets or permissions must be resolved or explicitly re-scoped with the user. Website implementation has not begun and remains paused until requested.
+Missing assets or permissions must be resolved or explicitly re-scoped with the user. Phase 4 is underway; missing material remains pending.
+
+
+### Phase 4 implementation status — October 29, 2026
+
+Semantic index.html includes all five sections, landmarks, a skip link, navigation anchors, logical headings, descriptive contact links, approved text/artwork, and three independent native project disclosures. Essential summaries and technologies remain outside collapsed details. Decorative artwork and icons use empty alternatives.
+
+The resume PDF is supplied and its education/research summary is approved and implemented. Project screenshots, actual classifier output, project URLs, and project public-sharing confirmations remain pending. No fabricated assets or placeholder links were added. Phase 4 remains incomplete; scope has not been reduced.
+
+Static checks passed for unique IDs, anchor/label targets, existing local assets, one h1, image alternatives, three independent initially closed disclosures, and no CSS/JS dependencies. git diff --check passed. Browser keyboard, skip focus, disclosure operation, screen-reader output, and external links remain unverified. Phase 5 will add state-dependent Show/Hide labels; current native labels describe project contributions. Styling/fonts and active-section JavaScript remain for Phases 5 and 6. No commit, push, or publication performed.
+
+
+Resume intake update: corrected PDF received and reviewed without the phone placeholder. The user supplied assets/resume/Resume_Angel.pdf locally; view and download links are now implemented and their local targets verified. The user approved the education and SURI experience summary; it is now implemented below the bio and above the PDF links.
+
+
+Approved resume summary: **Education:** BS in Computer Programming and Information Systems at Farmingdale State College, expected 2028. **Research experience:** SURI undergraduate research intern, summer 2026. Developed FastAPI endpoints, integrated the Gemini API, implemented MongoDB data operations, and collaborated using Git and GitHub.
+
+Project intake: user is locating Soft Steps screenshots and actual SMS classifier output/screenshots. The game remains in development and may have no screenshot available; text-only presentation is an option pending confirmation.
